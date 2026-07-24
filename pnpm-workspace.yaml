@@ -1,0 +1,12 @@
+packages:
+    - "src/**"
+    - "dev/**"
+    - "tests/**"
+allowBuilds:
+    "@swc/core": false
+    esbuild: false
+    sharp: false
+onlyBuiltDependencies:
+    - sharp
+    - esbuild
+    - unrs-resolver

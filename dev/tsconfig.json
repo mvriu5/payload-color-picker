@@ -1,0 +1,25 @@
+{
+    "extends": "../tsconfig.json",
+    "exclude": [],
+    "include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.mjs",
+        "**/*.cjs",
+        "**/*.ts",
+        "**/*.tsx",
+        "../src/**/*.ts",
+        "../src/**/*.tsx",
+        "next.config.mjs",
+        ".next/types/**/*.ts",
+    ],
+    "compilerOptions": {
+        "paths": {
+            "@payload-config": ["./payload.config.ts"],
+            "@mvriu5/payload-color-picker": ["../src/index.ts"],
+            "@mvriu5/payload-color-picker/client": ["../src/exports/client.ts"],
+        },
+        "noEmit": true,
+        "emitDeclarationOnly": false,
+    },
+}

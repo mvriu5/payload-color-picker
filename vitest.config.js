@@ -1,0 +1,24 @@
+import path from "path"
+import { loadEnv } from "payload/node"
+import { fileURLToPath } from "url"
+import { defineConfig } from "vitest/config"
+
+const filename = fileURLToPath(import.meta.url)
+const dirname = path.dirname(filename)
+
+export default defineConfig(() => {
+    loadEnv(path.resolve(dirname, "./dev"))
+
+    return {
+        resolve: {
+            tsconfigPaths: true,
+        },
+        test: {
+            environment: "node",
+            exclude: ["tests/e2e/**", "test-results/**"],
+            hookTimeout: 30_000,
+            include: ["tests/**/*.{test,spec}.{ts,tsx}"],
+            testTimeout: 30_000,
+        },
+    }
+})
