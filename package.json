@@ -42,7 +42,7 @@
         "@payloadcms/next": "3.86.0",
         "@payloadcms/richtext-lexical": "3.86.0",
         "@payloadcms/ui": "^3.86.0",
-        "@playwright/test": "1.61.1",
+        "@playwright/test": "1.62.0",
         "@swc/cli": "0.8.1",
         "@testing-library/react": "^16.3.2",
         "@testing-library/user-event": "^14.6.1",
