@@ -62,7 +62,7 @@
         "rimraf": "6.1.3",
         "sharp": "0.35.3",
         "typescript": "7.0.2",
-        "vitest": "4.1.10"
+        "vitest": "4.1.11"
     },
     "peerDependencies": {
         "@payloadcms/ui": "^3.84.1",
